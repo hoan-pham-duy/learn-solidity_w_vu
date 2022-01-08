@@ -1,0 +1,15 @@
+#+TITLE Document
+
+- Create a token/Coin
+
+- Create amout token
+[] Minter (Người khởi tạo)
+[] Supply (Lượng cung)
+[] Balance (số dư)
+
+- Sent token
+[] Receiver
+    [] Amount <= balance else not allow
+    [] balance sender -= amount
+    [] balance receiver += amout
+
