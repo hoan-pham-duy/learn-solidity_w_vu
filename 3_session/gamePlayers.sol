@@ -17,4 +17,8 @@ contract Game {
     players[msg.sender] = Player(msg.sender, fullName, Level.Begin, age, sex);
     countPlayer += 1;  
   }
+
+  function getPlayerLevel(address addressPlayer) public view returns (Level) {
+    return players[addressPlayer].level;
+  }
 }
