@@ -11,7 +11,7 @@ contract FirstCoin {
 
     modifier checkMinter() {
         require(msg.sender == minter, "Excepion: Only the minter can mint");
-        _;
+        _;//Only run when it is called
     }
 
     modifier checkAmount(uint amount) {
